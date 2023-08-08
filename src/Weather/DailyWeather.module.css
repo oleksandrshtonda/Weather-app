@@ -1,0 +1,71 @@
+.weatherCard {
+  width: 425px;
+  height: 300px;
+  background-color: rgba(82, 82, 82, 1);
+  margin: 0px auto;
+  padding-top: 30px;
+  border-radius: 15px;
+  transition: background-color 0.3s linear, box-shadow 0.3s linear;
+  color: #e7e7e7;
+  box-shadow: 5px 4px 12px 1px black;
+}
+
+.weatherCard:hover {
+  background-color: rgba(82, 82, 82, 0.85);
+  box-shadow: 5px 4px 18px 1px black;
+}
+
+.weatherCard:first-of-type {
+  background-color: rgba(82, 82, 82, 0.7);
+}
+
+.weatherCard:first-of-type:hover {
+  background-color: rgba(82, 82, 82, 0.45);
+}
+
+.pMaksTemp,
+.pMinTemp,
+.pWindSpeed,
+.pRainMM {
+  font-size: 17px;
+  position: relative;
+  left: 20px;
+  text-align: left;
+}
+
+.pRainMM {
+  top: 20px;
+}
+
+.pMaksTemp {
+  top: 60px;
+}
+
+.pMinTemp {
+  top: 70px;
+}
+
+.pHumidity,
+.pClouds {
+  font-size: 17px;
+  position: relative;
+  text-align: right;
+  right: 20px;
+}
+
+.pWindSpeed {
+  top: -10px;
+}
+
+.pClouds {
+  top: -20px;
+}
+.pHumidity {
+  top: 30px;
+}
+
+.icons {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}

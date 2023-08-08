@@ -1,0 +1,45 @@
+.header {
+  position: absolute;
+  padding-top: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(82, 82, 82, 1);
+  display: grid;
+}
+
+.h1 {
+  color: #fff;
+  font-size: 35px;
+  text-align: left;
+  position: relative;
+  left: 30px;
+  grid-area: headerText1;
+}
+
+@media (min-width: 1100px) {
+  .header{
+    grid-template-columns: 9fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'headerText1 chooseCountry chooseSity chooseLang';
+    height: 110px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: 220px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'headerText1 headerText1 headerText1' 'chooseCountry chooseSity chooseLang';
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    height: 440px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'headerText1' 'chooseCountry' 'chooseSity' 'chooseLang';
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
